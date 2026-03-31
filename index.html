@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruksana Farook</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --rose: #d4a0b5;
+      --rose-light: #ecc8d8;
+      --rose-dark: #a8708a;
+      --bg: #fdf8fa;
+      --text: #2c1a22;
+      --text-muted: #7a5060;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      background: var(--rose);
+      padding: 12px 24px;
+      text-align: center;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Hero */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px 40px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose-light), var(--rose));
+      border: 5px solid var(--rose);
+      box-shadow: 0 8px 32px rgba(212, 160, 181, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      color: #fff;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    /* Card */
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 40px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+      border-top: 4px solid var(--rose);
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+
+    .card a {
+      color: var(--rose-dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid #f0d8e4;
+    }
+
+    footer a {
+      color: var(--rose-dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="https://farooks.com">farooks.com</a>
+  </header>
+
+  <main>
+    <div class="avatar">R</div>
+    <h1>Ruksana</h1>
+    <p class="subtitle">Farook Family</p>
+
+    <div class="card">
+      <p>
+        Welcome to Ruksana's corner of the web. Part of the
+        <a href="https://farooks.com">Farooks family</a> — a place for
+        connection, memory, and belonging.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 &mdash; <a href="https://farooks.com">farooks.com</a>
+  </footer>
+
+</body>
+</html>
